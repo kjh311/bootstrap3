@@ -1,51 +1,114 @@
 <!DOCTYPE html>
-<html lang="en">
-<head>
-<meta charset="utf-8">
-<meta http-equiv="X-UA-Compatible" content="IE=edge">
-<meta name="viewport" content="width=device-width, initial-scale=1">
-<title>Example of Bootstrap 3 Multi-Column Grid Layout for All Devices</title>
-<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
-<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap-theme.min.css" integrity="sha384-rHyoN1iRsVXV4nD0JutlnGaslCJuC7uwjduW9SVrLvRYooPp2bWYgmgJQIXwl/Sp" crossorigin="anonymous">
-<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
-<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js" integrity="sha384-Tc5IQib027qvyjSMfHjOMaLkfuWVxZxUPnCJA7l2mCWNIpG9mGCD8wGNIcPD7Txa" crossorigin="anonymous"></script>
-<style type="text/css">
-    p{
-        padding: 50px;
-        font-size: 32px;
-        font-weight: bold;
-        text-align: center;
-        background: #dbdfe5;
-    }
-</style>
+<html>
+<head lang="en">
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Responsive Bootstrap Demo</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="http://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
+    <script src="http://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
 </head>
 <body>
-    <!-- Open the output in a new blank tab (Click the arrow next to "Show Output" button) and resize the window to understand how the Bootstrap responsive grid system works. -->
-    <div class="container">
-        <div class="row">
-            <div class="col-sm-6 col-md-4 col-lg-3"><p>Box 1</p></div>
-            <div class="col-sm-6 col-md-4 col-lg-3"><p>Box 2</p></div>
-            <div class="clearfix visible-sm-block"></div>x
-            <div class="col-sm-6 col-md-4 col-lg-3"><p>Box 3</p></div>
-            <div class="clearfix visible-md-block"></div>
-            <div class="col-sm-6 col-md-4 col-lg-3"><p>Box 4</p></div>
-            <div class="clearfix visible-sm-block"></div>
-            <div class="clearfix visible-lg-block"></div>
-            <div class="col-sm-6 col-md-4 col-lg-3"><p>Box 5</p></div>
-            <div class="col-sm-6 col-md-4 col-lg-3"><p>Box 6</p></div>
-            <div class="clearfix visible-sm-block"></div>
-            <div class="clearfix visible-md-block"></div>
-            <div class="col-sm-6 col-md-4 col-lg-3"><p>Box 7</p></div>
-            <div class="col-sm-6 col-md-4 col-lg-3"><p>Box 8</p></div>
-            <div class="clearfix visible-sm-block"></div>
-            <div class="clearfix visible-lg-block"></div>
-            <div class="col-sm-6 col-md-4 col-lg-3"><p>Box 9</p></div>
-            <div class="clearfix visible-md-block"></div>
-            <div class="col-sm-6 col-md-4 col-lg-3"><p>Box 10</p></div>
-            <div class="clearfix visible-sm-block"></div>
-            <div class="col-sm-6 col-md-4 col-lg-3"><p>Box 11</p></div>
-            <div class="col-sm-6 col-md-4 col-lg-3"><p>Box 12</p></div>
+    <nav id="myNavbar" class="navbar navbar-default navbar-inverse navbar-fixed-top" role="navigation">
+        <!-- Brand and toggle get grouped for better mobile display -->
+        <div class="container">
+            <div class="navbar-header">
+                <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#navbarCollapse">
+                    <span class="sr-only">Toggle navigation</span>
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                </button>
+                <a class="navbar-brand" href="#">Bootstrap Demo</a>
+            </div>
+            <!-- Collect the nav links, forms, and other content for toggling -->
+            <div class="collapse navbar-collapse" id="navbarCollapse">
+                <ul class="nav navbar-nav">
+                    <li class="active"><a href="http://kjh311.github.io/Kevin_Huelsmann_Portfolio/" target="_blank">Link #1</a></li>
+                    <li><a href="http://kevinhuelsmannportfolio.weebly.com/artwork.html" target="_blank">Link #2</a></li>
+                    <li><a href="http://kjh311.deviantart.com/gallery/" target="_blank">Link #3</a></li>
+                </ul>
+            </div>
         </div>
+    </nav>
+    <div class="container-fluid">
+        <div class="jumbotron">
+            <h1 class="visible-lg-block">Welcome to my Responsive Bootstrap Demo!</h1 class="visible-lg-block">
+            <h2 class="hidden-lg">Welcome to my Responsive Bootstrap Demo!</h2>
+            <h3 class="visible-lg-block">The number of columns changes depending on screen size.</h3>
+            <h5 class="hidden-lg">The number of columns changes depending on screen size.</h5>
+        </div>
+
+        <div class="row">
+            <div class="col-sm-6 col-md-4 col-lg-3">
+                <h1>Picture #1</h1>
+                <img src="img/abstract.jpg" alt="">
+                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Maiores perspiciatis adipisci perferendis, autem fugiat debitis quod voluptatem vel nam error ad animi et eum? Nostrum accusantium error culpa assumenda, sed! <a href="http://http://lorempixel.com/"></a>Lorempixel</p>
+            </div>
+
+            <div class="col-sm-6 col-md-4 col-lg-3">
+                <h1>Picture #2</h1>
+                <img src="img/faces.jpg" alt="">
+                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Voluptatum pariatur iure atque porro incidunt laboriosam reiciendis libero error minima ipsum nihil harum cupiditate enim placeat soluta, distinctio accusantium, suscipit. Quis! <a href="http://http://lorempixel.com/"></a>Lorempixel</p>
+            </div>
+
+            <div class="clearfix visible-sm-block"></div>
+
+            <div class="col-sm-6 col-md-4 col-lg-3">
+                <h1>Picture #3</h1>
+                <img src="img/flower.jpg" alt="">
+                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Earum blanditiis harum error nulla fugiat facilis exercitationem omnis magnam necessitatibus quae excepturi nostrum alias tempore, aliquid, corrupti aspernatur saepe odio provident. <a href="http://http://lorempixel.com/"></a>Lorempixel</p>
+            </div>
+
+            <div class="clearfix visible-md-block"></div>
+
+            <div class="col-sm-6 col-md-4 col-lg-3">
+                <h1>Picture #4</h1>
+                <img src="img/jazz.jpg" alt="">
+                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Eos incidunt vero beatae labore soluta provident deserunt commodi dolore omnis, magni quasi quod minus, voluptates deleniti hic, in corporis minima qui. <a href="http://http://lorempixel.com/"></a>Lorempixel</p>
+            </div>
+
+            <div class="clearfix visible-lg-block"></div>
+            <div class="clearfix visible-sm-block"></div>
+
+            <div class="col-sm-6 col-md-4 col-lg-3">
+                <h1>Picture #5</h1>
+                <img src="img/marilyn.jpg" alt="">
+                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Nesciunt, ipsam vitae delectus quas provident laborum a, rem omnis recusandae reiciendis impedit quae, explicabo officia facere cum perferendis rerum doloremque, assumenda. <a href="http://http://lorempixel.com/"></a>Lorempixel</p>
+            </div>
+
+            <div class="col-sm-6 col-md-4 col-lg-3">
+                <h1>Picture #6</h1>
+                <img src="img/tree.jpg" alt="">
+                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Aliquam autem dolore dolor repellat voluptates consequatur doloremque quos, minima odio, asperiores delectus maiores. Illum quidem cum commodi eius maiores consequatur soluta! <a href="http://http://lorempixel.com/"></a>Lorempixel</p>
+            </div>
+
+            <div class="clearfix visible-md-block"></div>
+            <div class="clearfix visible-sm-block"></div>
+
+            <div class="col-sm-6 col-md-4 col-lg-3">
+                <h1>Picture #7</h1>
+                <img src="img/butterfly.jpg" alt="">
+                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Delectus odit soluta modi dignissimos similique possimus provident atque in officiis magnam pariatur corporis eos reiciendis quam velit rerum, ab saepe? Reiciendis! <a href="http://http://lorempixel.com/"></a>Lorempixel</p>
+            </div>
+
+            <div class="col-sm-6 col-md-4 col-lg-3">
+                <h1>Picture #8</h1>
+                <img src="img/horse.jpg" alt="">
+                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ab pariatur ut, perferendis. Aliquid reprehenderit non, eaque voluptate consequatur sequi quo eius praesentium excepturi error ipsa dolore, voluptates veritatis nisi itaque? <a href="http://http://lorempixel.com/"></a>Lorempixel</p>
+            </div>
+
+            <div class="clearfix visible-lg-block"></div>
+            <div class="clearfix visible-sm-block"></div>
+            <div class="clearfix visible-md-block"></div>
+
+
+
+
+        </div>
+
     </div>
 </body>
 </html>
