@@ -12,7 +12,7 @@ img{
   color: red;
 }
 p{
-  text-align: left;
+  text-align: justify;
 }
 
 @media (max-width: 768px) {
@@ -23,6 +23,6 @@ p{
 
 @media (max-width: 468px) {
   img{
-    width: 80%;
+    width: 90%;
   }
 }
