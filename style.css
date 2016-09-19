@@ -1,6 +1,19 @@
+body {
+    margin:0;
+    padding:0;
+    background:#efefef;
+    text-align:center; /* used to center div in IE */
+}
 .container-fluid{
   /*background-color: red;*/
   text-align: center;
+}
+#click_to_close{
+  color: white;
+  z-index: 200;
+  margin-top: 50px;
+  cursor: pointer;
+  paddin: 20px;
 }
 img{
   overflow: hidden;
@@ -8,21 +21,75 @@ img{
   border: 2px solid black;
   border-radius: 20px;
 }
+#lightbox {
+    position:fixed; /* keeps the lightbox window in the current viewport */
+    top:0;
+    left:0;
+    width:100%;
+    height:100%;
+    color: white;
+    background-color: rgba(0,0,0,0.6);
+    text-align:center;
+}
+#lightbox img {
+    box-shadow:0 0 25px #111;
+    -webkit-box-shadow:0 0 25px #111;
+    -moz-box-shadow:0 0 25px #111;
+    /*width: 70%;*/
+    max-width:500px;
+    box-shadow: 10px 10px 10px black;
+    /*margin-top: 30px;*/
+}
+#lightbox p {
+    text-align:right;
+    color:#fff;
+    margin-right:20px;
+    font-size:12px;
+}
 .red{
   color: red;
 }
 p{
   text-align: justify;
 }
+#wrapper {
+    width:600px;
+    margin:0 auto; /*centers the div horizontally in all browsers (except IE)*/
+    background:#fff;
+    text-align:left; /*resets text alignment from body tag */
+    border:1px solid #ccc;
+    border-top:none;
+    padding:25px;
+    /*Let's add some CSS3 styles, these will degrade gracefully in older browser and IE*/
+    border-radius:0 0 5px 5px;
+    -moz-border-radius:0 0 5px 5px;
+    -webkit-border-radius: 0 0 5px 5px;
+    box-shadow:0 0 5px #ccc;
+    -moz-box-shadow:0 0 5px #ccc;
+    -webkit-box-shadow:0 0 5px #ccc;
+}
 
 @media (max-width: 768px) {
   img{
     width: 60%;
+  }
+  #content img{
+    width: 300px !important;
+  }
+}
+
+@media (max-width: 640px) {
+
+  #content img{
+    width: 250px !important;
   }
 }
 
 @media (max-width: 468px) {
   img{
     width: 90%;
+  }
+  #content img{
+    width: 275px !important;
   }
 }
